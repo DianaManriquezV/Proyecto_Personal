@@ -1,0 +1,28 @@
+.enlace{
+  padding-top: 3%;
+  /* padding-bottom: 8px; */
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  /* margin-left: 5%; */
+  font-size: 17px;
+  letter-spacing: 2px;
+  color: rgb(163, 162, 162);
+}
+p {
+  padding-top: 4%;
+  text-align: justify;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 18px;
+  letter-spacing: 3px;
+  word-spacing: 0px;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: italic;
+  font-variant: normal;
+  text-transform: uppercase;
+}
+.descripcion{
+  color: white;
+  padding-top: 5%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}

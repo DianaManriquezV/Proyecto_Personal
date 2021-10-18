@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnimLand</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="./estilos/estiloshome.css">
+  <link rel="stylesheet" href="./estilos/estilosgeneral.css">
+</head>
+
+<body>
+  <!--Barra de navegacion-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">AnimLand</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#anime">ANIME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#peliculas">PELICULAS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#manga" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">MANGA</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#manga">MANGAS</a></li>
+              <li><a class="dropdown-item" href="#manhua">MANHUAS</a></li>
+              <li><a class="dropdown-item" href="#manhwa">MANHWAS</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./curriculum/curriculum.html">CONÓCEME</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="titulo">
+      <h1>Animes para pasar el rato</h1>
+    </div>
+    <!--Carousel-->
+    <div class="row mt-5">
+      <div class="col">
+        <div id="carousel-Anim" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-Anim" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel-Anim" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel-Anim" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-caption">
+                <h4 id="color">Arifureta Shokugyou de Sekai Saikyou</h4>
+                <p id="color">Accion y Aventura</p>
+              </div>
+              <img src="img/hajime.JPG" class="d-block w-100" alt="..." height="570px">
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption">
+                <h4 id="color">Tokyo Ghoul</h4>
+                <p id="color">Fantasía oscura y Suspenso</p>
+              </div>
+              <img src="https://static3.cbrimages.com/wordpress/wp-content/uploads/2021/04/Kaneki-feature-image.jpg"
+                class="d-block w-100" alt="..." height="570px">
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-caption">
+                <h4 id="color">Jibaku Shonen Hanako-kun</h4>
+                <p id="color">Comedia y Ficción Sobrenatural</p>
+              </div>
+              <img src="https://i.ytimg.com/vi/aNh5mGqH6vY/maxresdefault.jpg" class="d-block w-100" alt="..."
+                height="570px">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-Anim" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-Anim" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--Card Anime-->
+    <span id="anime">
+      <br><br><br><br>
+      <h2>Anime</h2>
+    </span>
+    <!--Primer Card-->
+    <div class="row mt-5 justify-content-md-center">
+      <!--Hajime-->
+      <div class="col-4">
+        <div class="card">
+          <img src="https://pa1.narvii.com/7299/3afc57e0d0fe69d621e7fb7d9ffa22ebf5fb7478r1-480-270_hq.gif"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Arifureta Shokugyou de Sekai Saikyou</h5>
+            <p class="card-text">Transportados a otro mundo, para sobrevivir tienen que pelear contra seres muy
+              poderosos.</p>
+            <a href="anime/arifureta.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+      <!--Tokyo-->
+      <div class="col-4">
+        <div class="card">
+          <img src="https://c.tenor.com/FCsb6VtEQ6wAAAAC/tokyo-ghoul-anime.gif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Tokyo Ghoul</h5>
+            <p class="card-text">Un accidente lo convirtio en un hibrido, ahora se enfrenta a un dilema entre mantener
+              su humanidad y morir o convertirse en un monstruo y sobrevivir.</p>
+            <a href="anime/tokyoG.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+      <!--blood+-->
+      <div class="col-4">
+        <div class="card">
+          <img src="http://pa1.narvii.com/6767/4db506fb7bc035cd72eefe7ebd8d3359edcd66d0_00.gif" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Blood+</h5>
+            <p class="card-text">Vivir con una familia adoptiva, no tener recurdos de tu pasado y un gran secreto, es
+              algo por lo que Saya esta pasando.</p>
+            <a href="anime/blood.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Segunda Card-->
+    <div class="row mt-3 justify-content-md-center">
+      <!--Yona-->
+      <div class="col-4">
+        <div class="card">
+          <img src="https://biblionyan.files.wordpress.com/2018/08/yona-2.gif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Akatsuki no Yona</h5>
+            <p class="card-text">La traición, la decepción es algo que nos hace cambiar y mas cuando es de una de las
+              personas de mayor confianza.</p>
+            <a href="anime/Yona.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+      <!--kenka-->
+      <div class="col-4">
+        <div class="card">
+          <img src="https://i.pinimg.com/originals/4b/e1/78/4be178d0f3349835780159da7695c580.gif" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kenka Bancho Otome: Girl Beats Boys</h5>
+            <p class="card-text">¿Como explicarles que soy una chica en una academia para hombres Yakuzas?.</p>
+            <a href="anime/kenka.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+      <!--hanako-->
+      <div class="col-4">
+        <div class="card">
+          <img
+            src="https://img.wattpad.com/2e90518193903164fee164688e9f743571312c4c/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f463437326b6367416d74336637413d3d2d3936333332323734302e313637313635663739616139373337653139383039313832303330382e676966"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Jibaku Shōnen Hanako-kun</h5>
+            <p class="card-text">¿Una escuela embrujada? ¿Siete Misterios? ¿Un deseo? ¿Que es lo que realmente esta
+              pasando en la Academia Kamome?. <br>Nene Yashiro esta a punto de descubrirlo</p>
+            <a href="anime/hanako.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Tercer Card-->
+    <div class="row mt-3 justify-content-md-center">
+      <!--kakuriyo-->
+      <div class="col-4">
+        <div class="card">
+          <img src="https://64.media.tumblr.com/6ae053bef2a5868c3838671cd43e3f83/tumblr_p7gdqqo3NK1qbq5g5o1_500.gifv"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kakuriyo No Yadomeshi</h5>
+            <p class="card-text">Tiene la habilidad de ver Ayakashis y de cocinar delicioso, esto la pone en un gran
+              dilema, cuando uno de ellos va por ella.</p>
+            <a href="anime/kakuriyo.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+      <!--Mai-->
+      <div class="col-4">
+        <div class="card">
+          <img
+            src="https://images.hive.blog/p/YpihifdXP4WNbGMdjw7e3DuhJWBvCw4SfuLZsrnJYHEpsqZFkiGGNCQAx28iumjqubfu8cenPq7hyPVKnx4AnpvrZHaccPrGSwmzxEzDb58KJzTND7iWRym9mrMBnXuoCqCnTC6LWopHCx5btWAT6xD3h9jKGK7aiNrPWxxjJAdK?format=match&mode=fit"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Seishun Buta Yarou</h5>
+            <p class="card-text">Estos jovenes presentan un síndrome de pubertad misterioso, que esta afectando su vida
+              cotidiana ¿Que haran para resolverlo?</p>
+            <a href="anime/seishun.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+      <!--Kamisama-->
+      <div class="col-4">
+        <div class="card">
+          <img src="https://i.pinimg.com/originals/d5/0d/c1/d50dc1fb8bce921ba87571b76601d547.gif" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kamisama Hajimemashita</h5>
+            <p class="card-text">Gracias a las apuestas de su padre se queda en la calle, sin familia, sin un lugar al
+              cual regresar. ¿Que es lo que esta por pasar?.</p>
+            <a href="anime/Kamisama.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Cuarto Card-->
+    <div class="row mt-3 justify-content-md-center">
+      <!--Devils-->
+      <div class="col-4">
+        <div class="card">
+          <img src="https://pa1.narvii.com/6845/8c1d4ef05897f7b9d859c237aac4bf0a6ffb162e_hq.gif" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Devils Line</h5>
+            <p class="card-text">La policia esta para protegernos ¿o no?, entonces... <br> ¿Porque el me quiere comer?.
+            </p>
+            <a href="anime/devils.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+      <!--wotaku-->
+      <div class="col-4">
+        <div class="card">
+          <img src="https://i.pinimg.com/originals/78/58/4a/78584a26c52d597b23f6b7126a74656b.gif" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Wotaku ni Koi wa Muzukashī</h5>
+            <p class="card-text">Va de trabajo en trabajo con el fin de que nadie descubra su secreto, que es una otaku
+              de closet.</p>
+            <a href="anime/wotaku.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+      <!--watashi-->
+      <div class="col-4">
+        <div class="card">
+          <img src="https://i.pinimg.com/originals/d9/bf/d8/d9bfd86a9929b2d02aeda51b9debc5e6.gif" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Watashi ga Motete Dōsunda</h5>
+            <p class="card-text">De ser una estudiante ordinaria, paso a ser la mas popular entre los corazones de los
+              hombres de su academia.</p>
+            <a href="anime/watashi.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Peliculas-->
+    <span id="peliculas">
+      <br><br><br><br>
+      <h2>Peliculas</h2>
+    </span>
+    <!--Primer Card-->
+    <div class="row mt-5 justify-content-md-center">
+      <!--Luciernagas-->
+      <div class="col-4">
+        <div class="card">
+          <img src="https://pa1.narvii.com/6715/532d9ffa1a3263e76a56b489b9386c0a70b05b21_hq.gif" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">La Tumba de las Luciernagas</h5>
+            <p class="card-text">Sin padres, un adolescente trata de proteger a su hermana pequeña, mientras la guerra
+              se acerca a su fin.</p>
+            <a href="pelis/luciernagas.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+      <!--Mononoke-->
+      <div class="col-4">
+        <div class="card">
+          <img src="https://c.tenor.com/-K2g8L9lvIcAAAAC/princess-mononoke-mononoke.gif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">La Princesa Mononoke</h5>
+            <p class="card-text">La lucha entre los guardianes sobrenaturales de un bosque y los humanos que profanan
+              sus recursos y el abuso de la mecanización.</p>
+            <a href="pelis/mononoke.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+      <!--Castillo en el cielo-->
+      <div class="col-4">
+        <div class="card">
+          <img
+            src="https://1.bp.blogspot.com/-OZW74zfBAvE/X2eF7gEJ8KI/AAAAAAAAEPg/5QN_HP_f_5kWgojGi3a5ubN7NS2PP9qjgCLcBGAsYHQ/s500/49a2c5906f6bd39d80032e75180a40f7.gif"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">El Castillo en el Cielo</h5>
+            <p class="card-text">Una priedra magica antigua es lo que tienen que proteger de la avaricia de un grupo de
+              agentes militares.</p>
+            <a href="pelis/castilloCielo.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Segundo Card-->
+    <div class="row mt-3 justify-content-md-center">
+      <!--Castillo vagabundo-->
+      <div class="col-4">
+        <div class="card">
+          <img src="https://pa1.narvii.com/6189/1ef43176b6730f115d78fa859373ce7cdd9d17e8_hq.gif" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">El Castillo Ambulante</h5>
+            <p class="card-text">Ella sufre de una horrible maldición que hace que su aspecto cambie, decide emprender
+              un viaje para buscar ayuda.</p>
+            <a href="pelis/luciernagas.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+      <!--Your Name-->
+      <div class="col-4">
+        <div class="card">
+          <img
+            src="https://media4.giphy.com/media/nWPLGmsjvdQ4g/giphy.gif?cid=ecf05e47cwl0atgs0cdncbmjbn0q1lhhr31zjoyosw2hyi8t&rid=giphy.gif&ct=g"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Your Name</h5>
+            <p class="card-text">Siempre estoy buscando algo o alguien en mi, tengo este sentimiento, desde aquel día en
+              que las estrellas caían.</p>
+            <a href="pelis/yourName.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+      <!--El tiempo contigo-->
+      <div class="col-4">
+        <div class="card">
+          <img
+            src="https://64.media.tumblr.com/4768f99593d0705705ab64abf74ca001/e3a5481c48d6a388-98/s500x750/cf6aaf1fc12c5c7201fcafdba621e1a35c886522.gifv"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">El Tiempo Contigo</h5>
+            <p class="card-text">Una chica con un misterioso poder de manipular y controlar el clima a su antojo, pero
+              esto la pone en peligro.</p>
+            <a href="pelis/castilloCielo.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Tercer Card-->
+    <div class="row mt-3 justify-content-md-center">
+      <!--Kimetsu-->
+      <div class="col-4">
+        <div class="card">
+          <img src="https://otakucreativa.files.wordpress.com/2021/04/kimetsug4.gif?w=388" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kimetsu No Yaiba: Guardianes de la noche – Tren infinito</h5>
+            <p class="card-text">Su hermana es un demonio y ahora el lucha contra ellos porque quiere encontrar una cura
+              para que su heramana vuelva a ser humana.</p>
+            <a href="pelis/kimetsu.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+      <!--Amor de Gata-->
+      <div class="col-4">
+        <div class="card">
+          <img src="https://spoilertime.com/wp-content/uploads/2020/06/1-1.gif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Amor de Gata</h5>
+            <p class="card-text">Humanos y animales comienzan a desdibujarse cuando una chica peculiar se trasnforma en
+              gata para llamar la atención de su enemorado.</p>
+            <a href="pelis/amorGata.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+      <!--El viaje de chihiro-->
+      <div class="col-4">
+        <div class="card">
+          <img src="http://pa1.narvii.com/6186/248905508ce9cd5fb7203d3c088145d093741e55_00.gif" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">El Viaje de Chihiro</h5>
+            <p class="card-text">Durante una mudanza se ve atrapada en un mundo mágico y sobrenatural, teniendo como
+              misión buscar su libertad y la de sus padres, y así poder regresar a su mundo.</p>
+            <a href="pelis/viajeChi.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Mangas-->
+    <span id="manga">
+      <br><br><br><br>
+      <h2>Mangas</h2>
+    </span>
+    <!--Primer Card-->
+    <div class="row mt-3 justify-content-md-center">
+      <div class="col-4">
+        <div class="card">
+          <img src="https://pa1.narvii.com/6715/532d9ffa1a3263e76a56b489b9386c0a70b05b21_hq.gif" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">La Tumba de las Luciernagas</h5>
+            <p class="card-text">Sin padres, un adolescente trata de proteger a su hermana pequeña, mientras la guerra
+              se acerca a su fin.</p>
+            <a href="pelis/luciernagas.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Manhuas-->
+    <span id="manhua">
+      <br><br><br><br>
+      <h2>Manhuas</h2>
+    </span>
+    <!--Primer Card-->
+    <div class="row mt-3 justify-content-md-center">
+      <div class="col-4">
+        <div class="card">
+          <img src="https://pa1.narvii.com/6715/532d9ffa1a3263e76a56b489b9386c0a70b05b21_hq.gif" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">La Tumba de las Luciernagas</h5>
+            <p class="card-text">Sin padres, un adolescente trata de proteger a su hermana pequeña, mientras la guerra
+              se acerca a su fin.</p>
+            <a href="pelis/luciernagas.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Manhwas-->
+    <span id="manhwa">
+      <br><br><br><br>
+      <h2>Manhwas</h2>
+    </span>
+    <!--Primer Card-->
+    <div class="row mt-3 justify-content-md-center">
+      <div class="col-4">
+        <div class="card">
+          <img src="https://pa1.narvii.com/6715/532d9ffa1a3263e76a56b489b9386c0a70b05b21_hq.gif" class="card-img-top"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">La Tumba de las Luciernagas</h5>
+            <p class="card-text">Sin padres, un adolescente trata de proteger a su hermana pequeña, mientras la guerra
+              se acerca a su fin.</p>
+            <a href="pelis/luciernagas.html" class="btn btn-secondary">Go!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <div class="footer-basic">
+    <footer>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <ul class="list-inline">
+        <li class="list-inline-item">Se reservan todos los derechos, títulos de dominio e intereses a quien corresponda.
+          DESLINDE DE RESPONSABILIDAD.</li>
+      </ul>
+      <p class="copyright">Kathy_San © 2021</p>
+    </footer>
+  </div>
+  <!-- End -->
+
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
